@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="script" href="./script.js">
+</head>
+
+<body>
+    <div class="head">
+        <div>
+            <h1>Personal Details</h1>
+            <img class="dark-theme" src="./Images/moon.png" alt="dark-mode" id="darkicon">
+        </div>
+    </div>
+
+    <div class="about">
+        <h3>About Me</h3>
+        <table>
+            <tr>
+                <td>
+                    <div class="dp">
+                        <img src="/Images/ProfilePic.jpg" alt="ProfilePic">
+                    </div>
+                </td>
+                <td>
+                    <div class="name">
+                        <p>
+                            <span class="orange-text">Sakthi S</span></br>Student, Web Developer, Gamer
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p class="paras">
+            Hello there. I am Sakthi. I am a student pursuing my B.Tech degree in Kumaraguru College of
+            Technology, Coimbatore after completing my schooling in S.K.V Matriculation Higher Secondary School. I am
+            interested in programming and I love gaming so much. This page is created to display my personal details.
+        </p>
+    </div>
+
+    <div class="hobbies">
+        <h3>Hobbies And Interest</h3>
+        <div>
+            <p class="paras">
+                I love sports especially Cricket and Kabaddi. I like to watch movies in my freetime. I love to eat and
+                yeah, who doesn't love that? I don't know why but
+                I am so much interested in programming which made me dive deep into the world of coding. I have learnt
+                C, C++, Python. I also tried web development through which I learnt HTML a bit. I am serious gamer. I
+                love games so much and I never get tired of that. This craze about games and coding interest sparked me
+                to learn game development too.
+            </p>
+            <div class="hobbies-vid">
+                <video controls="available" src="/Images/GamingVideo.mp4"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <h3>Projects</h3>
+        <div>
+            <p class="paras">
+                As for now I have created many small programs for complex problems both in academics as well as
+                competitive coding competions available online. I have also created games using unity engine by
+                following tutorials. In web development I have hosted a website in which you can play the snake game. I
+                will provide the link below.
+            </p>
+            <a target="_blank" href="https://snake-thegame.w3spaces.com">Snake-Game</a>
+        </div>
+    </div>
+
+    <div class="fav-creators">
+        <h3>Favourite Content Creators</h3>
+        <p class="paras">
+            I like to watch youtube not only for entertainment but also learning something new everyday. In this I would
+            like to mention some of my favourite youtubes here.</br>
+            <a class="fav-links" target="_blank" href="https://www.youtube.com/@tamilgaming">TamilGaming</a> - The first
+            indian gaming
+            youtube
+            channel run
+            by two brothers who never fail to entertain us in
+            their gaming live streams. They're absolute stress busters.</br>
+            <a class="fav-links" target="_blank" href="https://www.youtube.com/@A2DChannel">A2D Channel</a> - A2D
+            channel is an infotainment channel in
+            which we can learn a lot of technincal stuff in a fun entertained way. I gained a lot of knowledge from
+            here.</br>
+            <a class="fav-links" target="_blank" href="https://www.youtube.com/@Brackeys">Brackeys</a> - My game
+            development journey started here when I
+            out of curiousity searched up in google "How to make video games?" and this wholesome guy showed and taught
+            me a huge amount of stuff. Massive respect to him!
+        </p>
+    </div>
+
+    <div class="fav-games">
+        <h3>Favourite Games</h3>
+        <p class="paras">A small list of some of my favourite games:</p>
+        <table id="game-table">
+            <tr>
+                <th>Name</th>
+                <th>Genre</th>
+            </tr>
+            <tr class="table-rows">
+                <td>GTA V</td>
+                <td>Action,Open-World</td>
+            </tr>
+            <tr class="table-rows">
+                <td>NFS Most Wanted</td>
+                <td>Racing, Open-World</td>
+            </tr>
+            <tr class="table-rows">
+                <td>Minecraft</td>
+                <td>Sandbox, Adventure</td>
+            </tr>
+            <tr class="table-rows">
+                <td>Outlast Series</td>
+                <td>Horror</td>
+            </tr>
+            <tr class="table-rows">
+                <td>Assassin's Creed</td>
+                <td>Open-World, Stealth</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="feedback">
+        <form>
+            <label for="feedback">Feel free to leave a feedback:</label></br>
+            <textarea name="feedback" id="feedback"></textarea></br>
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+    <script>
+        var icon = document.getElementById("darkicon");
+        var table = document.getElementById("game-table");
+
+        icon.onclick = function () {
+            console.log("Hi");
+            var htmlElement = document.querySelector('html');
+            if (htmlElement.style.getPropertyValue('--primaryColor') === 'white') {
+                icon.src = "./Images/sun.png"
+                htmlElement.style.setProperty('--primaryColor', 'black');
+                htmlElement.style.setProperty('--secondaryColor', 'white');
+            } else {
+                icon.src = "./Images/moon.png"
+                htmlElement.style.setProperty('--primaryColor', 'white');
+                htmlElement.style.setProperty('--secondaryColor', 'black');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
