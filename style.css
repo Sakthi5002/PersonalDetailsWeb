@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --primaryColor: white;
+    --secondaryColor: black;
+}
+
+
+.dark-theme {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    right: 3rem;
+    top: 3.4rem;
+    --primaryColor: black;
+    --secondaryColor: white;
+    cursor: pointer;
+}
+
+/*
+.about,
+.hobbies,
+.projects,
+.fav-creators,
+.fav-games,
+.feedback {
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+*/
+
+.head {
+    width: 100%;
+    position: relative;
+    height: 10rem;
+    background: orangered;
+}
+
+.head h1 {
+    text-align: center;
+    left: 20rem;
+    padding-top: 2.5rem;
+    color: black;
+    font-size: 5rem;
+}
+
+
+h3 {
+    color: orangered;
+    margin: 2rem 1rem;
+    font-size: 2.5rem;
+}
+
+.dp img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.paras {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.name p {
+    position: relative;
+    transform: translateY(-1.8rem);
+    font-size: 3rem;
+}
+
+.orange-text {
+    color: orangered;
+}
+
+.hobbies-vid video {
+    object-fit: cover;
+    margin: 1rem;
+    height: 50rem;
+}
+
+.projects a {
+    margin-left: 1rem;
+    color: rgb(10, 192, 0);
+    font-size: 1.8rem;
+}
+
+.fav-links {
+    color: orangered;
+}
+
+.fav-games table {
+    background-color: var(--secondaryColor);
+    text-align: center;
+    width: 70rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+}
+
+.fav-games th {
+    background-color: orangered;
+    height: 4rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.table-rows {
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+.fav-games p {
+    margin-bottom: 2rem;
+}
+
+.feedback {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.feedback label {
+    font-size: 2.3rem;
+    color: orangered;
+}
+
+.feedback textarea {
+    height: 10rem;
+    width: 100%
+}
+
+.feedback button {
+    height: 3.5rem;
+    width: 10rem;
+    background-color: orangered;
+    border-radius: 30rem;
+    color: black;
+    position: relative;
+    right: -50%;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
